@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#11182a">
-  <meta name="description" content="Conoce la trayectoria de Ignacio Darío Espinoza Albarrán, joven deportista peruano que se prepara para participar en los II World Games Taekwon-Do ITF 2026, y descubre cómo sumarte como aliado.">
+  <meta name="description" content="Conoce la trayectoria de Ignacio Darío Espinoza Albarrán, su preparación para los II World Games Taekwon-Do ITF 2026 y las formas de sumarte como aliado.">
   <meta property="og:title" content="Ignacio TKD Perú | Disciplina rumbo a Uruguay">
   <meta property="og:description" content="Proyecto deportivo abierto a empresas, instituciones y personas que quieran acompañar el camino de Ignacio a los II World Games 2026.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ignaciotkdperu-dotcom.github.io/ignaciotkdperu/">
-  <meta property="og:image" content="https://ignaciotkdperu-dotcom.github.io/ignaciotkdperu/assets/oxapampa-competencia.jpg">
+  <meta property="og:image" content="https://ignaciotkdperu-dotcom.github.io/ignaciotkdperu/assets/hero-ignacio-medallas.jpg">
   <title>Ignacio TKD Perú | Disciplina rumbo a Uruguay</title>
   <style>
     :root {
@@ -132,7 +132,7 @@
     .stat b { display: block; font-size: 1.42rem; }
     .stat span { display: block; color: #cdd5e2; font-size: .82rem; }
     .hero-photo { position: relative; }
-    .hero-photo img { width: 100%; height: 610px; object-fit: cover; object-position: center 42%; border-radius: 28px; box-shadow: var(--shadow); filter: contrast(1.03) saturate(1.02); }
+    .hero-photo img { width: 100%; height: 610px; object-fit: cover; object-position: center 46%; border-radius: 28px; box-shadow: var(--shadow); }
     .hero-badge {
       position: absolute;
       right: -12px;
@@ -162,43 +162,41 @@
     .values { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 25px; }
     .value { padding: 16px; border-radius: 14px; background: var(--soft); font-weight: 850; }
 
-    .news { background: #fff; }
-    .news-grid { display: grid; grid-template-columns: 1.08fr .92fr; gap: 22px; align-items: stretch; }
-    .news-card { overflow: hidden; display: flex; flex-direction: column; background: #fff; border: 1px solid var(--line); border-radius: 22px; box-shadow: 0 14px 40px rgba(17,24,42,.08); }
-    .news-card > img { width: 100%; height: 365px; object-fit: cover; object-position: center 43%; }
-    .news-body { display: flex; flex: 1; flex-direction: column; align-items: flex-start; padding: 24px; }
-    .news-date { color: var(--red); font-size: .78rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
-    .news-card h3 { margin: 7px 0 9px; color: var(--navy); font-size: 1.55rem; line-height: 1.15; }
-    .news-card p { margin: 0 0 18px; color: var(--muted); }
-    .news-card .btn { margin-top: auto; }
-    .focaccia-poster { min-height: 365px; display: flex; flex-direction: column; justify-content: center; padding: 30px; color: #fff; background: radial-gradient(circle at 85% 14%, rgba(255,220,126,.34), transparent 25%), linear-gradient(145deg, #5f281c, #a44725 58%, #d1823e); }
-    .poster-brand { color: #ffe7a5; font-family: Georgia, serif; font-size: 1.05rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
-    .focaccia-poster h3 { margin: 9px 0 4px; color: #fff; font-family: Georgia, serif; font-size: clamp(2.2rem, 4vw, 3.6rem); }
-    .poster-subtitle { margin: 0 0 18px; color: #fff0db; font-weight: 750; }
-    .poster-prices { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-    .poster-price { padding: 14px; text-align: center; color: #572418; background: #fff4df; border-radius: 15px; }
-    .poster-price b { display: block; font-size: 1.6rem; line-height: 1; }
-    .poster-toppings { margin-top: 14px; color: #fff7ed; font-size: .88rem; font-weight: 750; }
-    .poster-delivery { align-self: flex-start; margin-top: 16px; padding: 8px 12px; color: #592518; background: #ffd978; border-radius: 999px; font-size: .82rem; font-weight: 900; }
-
     .latest { background: var(--navy); color: #fff; }
     .latest .section-head > p { color: #cdd5e2; }
     .latest .eyebrow { color: #ff8993; }
-    .result-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: stretch; }
-    .result-main { position: relative; overflow: hidden; border-radius: var(--radius); min-height: 540px; }
-    .result-main img { width: 100%; height: 100%; object-fit: cover; }
+    .result-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 28px; align-items: start; }
+    .result-main { position: relative; overflow: hidden; height: 610px; border-radius: var(--radius); }
+    .result-main img { width: 100%; height: 100%; object-fit: cover; object-position: center 46%; }
     .result-label { position: absolute; inset: auto 18px 18px; padding: 15px 17px; border-radius: 14px; background: rgba(17,24,42,.88); backdrop-filter: blur(10px); }
     .result-label b { display: block; font-size: 1.1rem; }
-    .result-side { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-    .action-shot { position: relative; overflow: hidden; min-height: 250px; margin: 0; border-radius: 18px; background: #202a40; }
-    .action-shot img { width: 100%; height: 250px; object-fit: cover; border-radius: 0; }
-    .action-shot figcaption { position: absolute; inset: auto 10px 10px; padding: 8px 10px; color: #fff; background: rgba(17,24,42,.84); border-radius: 9px; font-size: .78rem; font-weight: 800; }
-    .medal-card { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
-    .medal { min-height: 112px; display: flex; flex-direction: column; justify-content: center; padding: 18px; color: var(--navy); border-radius: 16px; }
-    .medal.gold { background: linear-gradient(135deg, #fff6ce, #e5bd42); }
-    .medal.silver { background: linear-gradient(135deg, #f8fafc, #bdc7d2); }
-    .medal strong { display: block; color: var(--navy); font-size: 1.55rem; }
-    .medal span { color: #4d5562; font-size: .9rem; font-weight: 750; }
+    .result-side { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; align-content: start; }
+    .action-shot { position: relative; overflow: hidden; height: 260px; border-radius: 18px; }
+    .action-shot img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+    .action-shot span { position: absolute; inset: auto 12px 12px; padding: 7px 10px; color: #fff; background: rgba(17,24,42,.82); border-radius: 9px; font-size: .78rem; font-weight: 850; }
+    .medal-card { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr; gap: 10px; }
+    .medal { min-height: 86px; display: grid; grid-template-columns: 58px 1fr; grid-template-rows: auto auto; align-items: center; padding: 12px 16px; text-align: left; color: var(--ink); background: linear-gradient(145deg, #fff, #f2f4f7); border: 1px solid rgba(255,255,255,.72); border-radius: 16px; box-shadow: 0 10px 24px rgba(0,0,0,.16); }
+    .medal.gold { background: linear-gradient(145deg, #fff8d9, #e7c256); }
+    .medal.silver { background: linear-gradient(145deg, #fff, #cfd5dc); }
+    .medal-icon { grid-row: 1 / 3; width: 48px; height: 48px; display: grid; place-items: center; color: #fff; background: var(--navy); border: 4px solid rgba(255,255,255,.72); border-radius: 50%; box-shadow: 0 7px 18px rgba(0,0,0,.18); font-size: 1.08rem; font-weight: 950; }
+    .medal.gold .medal-icon { background: #b78300; }
+    .medal.silver .medal-icon { background: #68717c; }
+    .medal strong { align-self: end; display: block; color: var(--navy); font-size: 1.06rem; }
+    .medal span { align-self: start; margin-top: 1px; color: #4c5663; font-size: .82rem; }
+
+    .news { background: #fff; }
+    .news-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+    .news-card { overflow: hidden; display: grid; grid-template-rows: 500px auto; background: var(--soft); border: 1px solid var(--line); border-radius: 22px; box-shadow: 0 16px 38px rgba(17,24,42,.08); }
+    .news-card > img { width: 100%; height: 500px; object-fit: cover; }
+    .news-card.oxapampa > img { object-position: center 45%; }
+    .news-card.focaccias > img { object-fit: contain; background: #f4eadb; }
+    .news-body { display: flex; flex-direction: column; align-items: flex-start; padding: 25px; }
+    .news-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 13px; }
+    .news-tag, .news-date { padding: 5px 9px; border-radius: 999px; font-size: .72rem; font-weight: 900; }
+    .news-tag { color: #fff; background: var(--red); }
+    .news-date { color: var(--navy); background: #e4e8ed; }
+    .news-body h3 { margin: 0 0 9px; color: var(--navy); font-size: 1.6rem; line-height: 1.15; }
+    .news-body p { flex: 1; margin: 0 0 19px; color: var(--muted); }
 
     .timeline { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
     .time-card { padding: 21px; background: #fff; border: 1px solid var(--line); border-top: 5px solid var(--red); border-radius: 17px; }
@@ -220,6 +218,23 @@
     .alliance-number { width: 38px; height: 38px; display: grid; place-items: center; color: #fff; background: var(--red); border-radius: 50%; font-weight: 950; }
     .alliance-card h3 { margin: 16px 0 7px; }
     .alliance-card p { flex: 1; color: var(--muted); font-size: .92rem; }
+    .sponsor-title { margin: 60px 0 25px; }
+    .sponsor-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; align-items: stretch; }
+    .sponsor-card { display: flex; flex-direction: column; padding: 24px; background: #fff; border: 1px solid var(--line); border-top: 6px solid var(--red); border-radius: 18px; box-shadow: 0 14px 32px rgba(17,24,42,.07); }
+    .sponsor-card.bronze { border-top-color: #9b5b32; }
+    .sponsor-card.silver { border-top-color: #747d88; }
+    .sponsor-card.gold { color: #fff; background: var(--navy); border-color: var(--gold); border-top-color: var(--gold); }
+    .tier-name { color: var(--red); font-size: .72rem; font-weight: 950; letter-spacing: .12em; text-transform: uppercase; }
+    .bronze .tier-name { color: #8b4d28; }
+    .silver .tier-name { color: #5f6873; }
+    .gold .tier-name { color: #f0ca56; }
+    .sponsor-card h3 { margin: 8px 0 3px; font-size: 1.42rem; }
+    .tier-amount { display: block; min-height: 44px; color: var(--red-dark); font-size: 1.03rem; font-weight: 950; }
+    .gold .tier-amount { color: #ffe58d; }
+    .sponsor-card ul { flex: 1; margin: 16px 0 22px; padding-left: 19px; color: var(--muted); font-size: .88rem; }
+    .sponsor-card li + li { margin-top: 7px; }
+    .gold ul { color: #d7deeb; }
+    .tier-note { margin: 17px 0 0; padding: 17px 19px; color: var(--muted); background: var(--soft); border-left: 5px solid var(--olive); border-radius: 12px; font-size: .88rem; }
     .need-title { margin: 60px 0 25px; }
     .needs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
     .need { display: flex; flex-direction: column; padding: 21px; background: var(--soft); border-radius: 17px; }
@@ -319,13 +334,14 @@
       .menu-btn { display: block; }
       .nav-cta { display: none; }
       .hero { background: var(--navy); }
-      .hero-grid, .story-grid, .world-grid, .participate-grid, .closing-grid, .news-grid { grid-template-columns: 1fr; }
+      .hero-grid, .story-grid, .world-grid, .participate-grid, .closing-grid { grid-template-columns: 1fr; }
       .hero-photo img { height: 560px; }
       .event-strip .wrap { grid-template-columns: repeat(2, 1fr); }
       .event-fact:nth-child(3) { border-left: 0; border-top: 1px solid var(--line); }
       .event-fact:nth-child(4) { border-top: 1px solid var(--line); }
       .result-grid { grid-template-columns: 1fr; }
-      .alliance-grid, .needs, .benefit-grid, .timeline { grid-template-columns: repeat(2, 1fr); }
+      .news-grid { grid-template-columns: 1fr; }
+      .alliance-grid, .sponsor-grid, .needs, .benefit-grid, .timeline { grid-template-columns: repeat(2, 1fr); }
       .document-grid { grid-template-columns: 1fr 1fr; }
       .logo-groups { grid-template-columns: 1fr; }
       .gallery { grid-template-columns: repeat(2, 1fr); }
@@ -339,14 +355,16 @@
       .hero h1 { font-size: 3.25rem; }
       .hero-photo img { height: 460px; }
       .hero-badge { right: 12px; left: 12px; bottom: 14px; }
-      .hero-stats, .event-strip .wrap, .story-photos, .values, .result-side, .medal-card, .facts, .alliance-grid, .needs, .benefit-grid, .timeline, .document-grid, .form-row, .quick-links, .gallery, .poster-prices { grid-template-columns: 1fr; }
+      .hero-stats, .event-strip .wrap, .story-photos, .values, .result-side, .medal-card, .facts, .alliance-grid, .sponsor-grid, .needs, .benefit-grid, .timeline, .document-grid, .form-row, .quick-links, .gallery { grid-template-columns: 1fr; }
       .event-fact { border-left: 0; border-top: 1px solid var(--line); }
       .event-fact:first-child { border-top: 0; }
       .story-photos img { height: 330px; }
       .story-photos img:first-child { margin-top: 0; }
-      .result-main { min-height: 460px; }
-      .result-side img { height: 300px; }
+      .result-main { height: 520px; }
+      .action-shot { height: 260px; }
       .medal-card { display: grid; }
+      .news-card { grid-template-rows: 430px auto; }
+      .news-card > img { height: 430px; }
       .section-head { display: block; }
       .section-head > p { margin-top: 15px; }
       .closing img { height: 370px; }
@@ -358,8 +376,8 @@
     <div class="wrap navbar">
       <a class="brand" href="#inicio">IGNACIO <span>TKD PERÚ</span></a>
       <div class="navlinks" id="navlinks">
-        <a href="#historia">Historia</a>
         <a href="#noticias">Noticias</a>
+        <a href="#historia">Historia</a>
         <a href="#logros">Logros</a>
         <a href="#world-games">World Games</a>
         <a href="#alianzas">Alianzas</a>
@@ -378,7 +396,7 @@
       <div class="hero-copy">
         <div class="eyebrow">Proyecto deportivo abierto a alianzas</div>
         <h1>IGNACIO<small>Disciplina peruana rumbo a los II World Games Taekwon-Do ITF 2026</small></h1>
-        <p>Ignacio Darío Espinoza Albarrán se prepara para participar en Punta del Este, Uruguay. Sus logros locales y nacionales sostienen este nuevo desafío, al que pueden sumarse empresas, instituciones y personas.</p>
+        <p>Ignacio Darío Espinoza Albarrán se prepara para participar en los II World Games de Taekwon-Do ITF en Punta del Este, Uruguay. Empresas, instituciones y personas pueden acompañar este camino.</p>
         <div class="hero-actions">
           <a class="btn red" href="#alianzas">Conocer cómo sumarse</a>
           <a class="btn ghost" href="dossier-final.pdf" target="_blank" rel="noopener">Descargar dosier</a>
@@ -391,7 +409,7 @@
         </div>
       </div>
       <div class="hero-photo">
-        <img src="assets/oxapampa-competencia.jpg" alt="Ignacio con su diploma y medallas obtenidas en Oxapampa" fetchpriority="high">
+        <img src="assets/hero-ignacio-medallas.jpg" alt="Ignacio sonríe y muestra sus medallas de Taekwon-Do" fetchpriority="high">
         <div class="hero-badge">Rumbo a Punta del Este<small>II World Games Taekwon-Do ITF 2026</small></div>
       </div>
     </div>
@@ -410,35 +428,25 @@
     <section class="news" id="noticias">
       <div class="wrap">
         <div class="section-head">
-          <div><div class="eyebrow">Noticias y actividades</div><h2>El camino continúa</h2></div>
-          <p>Conoce las competencias, actividades y campañas que acompañan la preparación deportiva de Ignacio rumbo a Uruguay.</p>
+          <div><div class="eyebrow">Actualidad</div><h2>Noticias del camino de Ignacio</h2></div>
+          <p>Resultados, actividades y nuevas maneras de acompañar su preparación deportiva rumbo a Uruguay.</p>
         </div>
         <div class="news-grid">
-          <article class="news-card">
-            <img src="assets/oxapampa-podio-peru.jpg" alt="Ignacio en el primer lugar del podio durante el torneo de Oxapampa" loading="lazy">
+          <article class="news-card oxapampa">
+            <img src="assets/oxapampa-podio-2026.jpg" alt="Ignacio en el primer lugar del podio durante el torneo de Oxapampa" loading="lazy">
             <div class="news-body">
-              <div class="news-date">8 de agosto de 2026 · Oxapampa</div>
-              <h3>Tres medallas en el I Descentralizado Ki-Baek</h3>
-              <p>Ignacio obtuvo el primer puesto en Matsogi, el primer puesto en Tukgi y el segundo puesto en Tul. Una participación que fortalece su preparación y refleja su constancia deportiva.</p>
-              <a class="btn dark" href="#logros">Ver resultados</a>
+              <div class="news-meta"><span class="news-tag">Último resultado</span><span class="news-date">8 de agosto de 2026</span></div>
+              <h3>Tres medallas en Oxapampa</h3>
+              <p>Ignacio obtuvo el 1.er puesto en combate, el 1.er puesto en rotura especial y el 2.º puesto en tul durante el I Descentralizado Ki-Baek Oxapampa 2026.</p>
+              <a class="btn dark" href="#logros">Ver fotografías y resultados</a>
             </div>
           </article>
-          <article class="news-card">
-            <div class="focaccia-poster" role="img" aria-label="Campaña de focaccias artesanales Casa Vittorio: una por 30 soles o dos por 50 soles">
-              <div class="poster-brand">Casa Vittorio</div>
-              <h3>Focaccias artesanales</h3>
-              <div class="poster-subtitle">Disfruta y ayuda a impulsar el viaje deportivo de Ignacio</div>
-              <div class="poster-prices">
-                <div class="poster-price"><span>1 focaccia</span><b>S/ 30</b></div>
-                <div class="poster-price"><span>2 focaccias</span><b>S/ 50</b></div>
-              </div>
-              <div class="poster-toppings">Romero · queso · aceituna verde · cebolla blanca<br>Especial con jamón y tocino: + S/ 3</div>
-              <div class="poster-delivery">Entrega: 1 de septiembre</div>
-            </div>
+          <article class="news-card focaccias">
+            <img src="assets/noticia-focaccias.jpg" alt="Campaña de focaccias artesanales para apoyar el viaje deportivo de Ignacio" loading="lazy">
             <div class="news-body">
-              <div class="news-date">Campaña solidaria</div>
+              <div class="news-meta"><span class="news-tag">Campaña activa</span><span class="news-date">Entrega 1 de septiembre</span></div>
               <h3>Focaccias para impulsar su viaje</h3>
-              <p>Cada compra contribuye a la preparación y el viaje de Ignacio. Reserva directamente por WhatsApp y elige tu combinación.</p>
+              <p>Casa Vittorio prepara focaccias artesanales. Cada compra contribuye a cubrir la preparación y el viaje de Ignacio. Puedes elegir tus ingredientes y reservar directamente por WhatsApp.</p>
               <a class="btn red" href="https://wa.me/51987760581?text=Hola%2C%20quiero%20reservar%20focaccias%20y%20apoyar%20el%20viaje%20de%20Ignacio." target="_blank" rel="noopener">Reservar por WhatsApp</a>
             </div>
           </article>
@@ -484,12 +492,18 @@
             <div class="result-label"><b>Torneo en Oxapampa · 2026</b><span>Resultado deportivo reciente</span></div>
           </div>
           <div class="result-side">
-            <figure class="action-shot"><img src="assets/oxapampa-competencia.jpg" alt="Ignacio presenta su diploma y medallas obtenidas en Oxapampa" loading="lazy"><figcaption>Constancia que se convierte en resultados</figcaption></figure>
-            <figure class="action-shot"><img src="assets/img-05-d96815d88d.jpg" alt="Ignacio durante una práctica técnica de Taekwon-Do" loading="lazy"><figcaption>Preparación técnica y disciplina</figcaption></figure>
+            <div class="action-shot">
+              <img src="assets/oxapampa-accion-salto.jpg" alt="Ignacio ejecuta una técnica de pierna durante el combate en Oxapampa" loading="lazy">
+              <span>Técnica y velocidad en competencia</span>
+            </div>
+            <div class="action-shot">
+              <img src="assets/oxapampa-accion-combate.jpg" alt="Ignacio preparado durante su combate en Oxapampa" loading="lazy">
+              <span>Concentración en cada encuentro</span>
+            </div>
             <div class="medal-card">
-              <div class="medal gold"><strong>Primer puesto</strong><span>Combate · Matsogi</span></div>
-              <div class="medal gold"><strong>Primer puesto</strong><span>Rotura especial · Tukgi</span></div>
-              <div class="medal silver"><strong>Segundo puesto</strong><span>Formas · Tul</span></div>
+              <div class="medal gold"><div class="medal-icon">1</div><strong>Primer puesto</strong><span>Combate · Matsogi</span></div>
+              <div class="medal gold"><div class="medal-icon">1</div><strong>Primer puesto</strong><span>Rotura especial · Tukgi</span></div>
+              <div class="medal silver"><div class="medal-icon">2</div><strong>Segundo puesto</strong><span>Formas · Tul</span></div>
             </div>
           </div>
         </div>
@@ -544,6 +558,58 @@
           <article class="alliance-card"><div class="alliance-number">4</div><h3>Difusión y conexión</h3><p>Compartir su historia o presentarla a otras organizaciones y redes de aliados.</p><button class="btn light" type="button" onclick="chooseSupport('Difusión y conexión')">Me interesa</button></article>
         </div>
 
+        <div class="sponsor-title"><div class="eyebrow">Niveles de patrocinio</div><h2>Qué recibe cada aliado según su aporte</h2></div>
+        <div class="sponsor-grid">
+          <article class="sponsor-card ally">
+            <span class="tier-name">Aliado deportivo</span>
+            <h3>Todo apoyo suma</h3>
+            <strong class="tier-amount">Hasta USD 299 o apoyo en especie</strong>
+            <ul>
+              <li>Nombre en la sección de aliados de la web.</li>
+              <li>Agradecimiento en redes sociales.</li>
+              <li>Certificado digital de reconocimiento.</li>
+            </ul>
+            <button class="btn light" type="button" onclick="chooseSupport('Aliado deportivo')">Ser aliado</button>
+          </article>
+          <article class="sponsor-card bronze">
+            <span class="tier-name">Patrocinador Bronce</span>
+            <h3>Presencia digital</h3>
+            <strong class="tier-amount">USD 300 a USD 999</strong>
+            <ul>
+              <li>Logotipo en la página web.</li>
+              <li>Mención de agradecimiento en redes.</li>
+              <li>Certificado digital.</li>
+              <li>Inclusión en la lista de aliados del dosier.</li>
+            </ul>
+            <button class="btn light" type="button" onclick="chooseSupport('Patrocinador Bronce')">Elegir Bronce</button>
+          </article>
+          <article class="sponsor-card silver">
+            <span class="tier-name">Patrocinador Plata</span>
+            <h3>Mayor visibilidad</h3>
+            <strong class="tier-amount">USD 1,000 a USD 2,499</strong>
+            <ul>
+              <li>Logotipo en la web y en el dosier.</li>
+              <li>Menciones y publicación dedicada.</li>
+              <li>Fotografías oficiales del evento.</li>
+              <li>Logotipo en el buzo oficial, sujeto a autorización.</li>
+            </ul>
+            <button class="btn light" type="button" onclick="chooseSupport('Patrocinador Plata')">Elegir Plata</button>
+          </article>
+          <article class="sponsor-card gold">
+            <span class="tier-name">Patrocinador Oro</span>
+            <h3>Aliado principal</h3>
+            <strong class="tier-amount">Desde USD 2,500 o financiamiento integral</strong>
+            <ul>
+              <li>Logotipo destacado en portada, web y piezas.</li>
+              <li>Menciones, contenido y fotografías oficiales.</li>
+              <li>Visita y fotografía de agradecimiento en la empresa.</li>
+              <li>Logotipo en buzo y dobok, sujeto a autorización.</li>
+            </ul>
+            <button class="btn light" type="button" onclick="chooseSupport('Patrocinador Oro')">Elegir Oro</button>
+          </article>
+        </div>
+        <p class="tier-note">Los rangos son referenciales y pueden cubrirse en dólares, su equivalente en soles o mediante productos y servicios valorizados. La inclusión de logotipos en el buzo oficial de la delegación del Perú o en el dobok de combate depende de autorización previa, espacio disponible, fechas de producción y reglas técnicas del evento.</p>
+
         <div class="need-title"><div class="eyebrow">Necesidades referenciales</div><h2>Elige qué parte del camino impulsar</h2></div>
         <div class="needs">
           <article class="need"><h3>Preparación deportiva</h3><p>Cuatro meses de entrenamiento.</p><strong>S/ 800</strong><button class="btn light" type="button" onclick="chooseSupport('Preparación deportiva')">Quiero apoyar</button></article>
@@ -586,12 +652,12 @@
             <div class="body"><h3>Carta de invitación</h3><p>Documento emitido por la organización del evento para la participación en los II World Games.</p><button class="btn dark" type="button" onclick="openImage('assets/img-07-01b59c758b.png', 'Carta de invitación')">Ver documento</button></div>
           </article>
           <article class="document-card">
-            <img src="assets/oxapampa-competencia.jpg" alt="Ignacio con el diploma obtenido en Oxapampa" loading="lazy">
+            <img src="assets/diploma-oxapampa-2026.jpg" alt="Diploma de logros de Ignacio en Oxapampa 2026" loading="lazy">
             <div class="body"><h3>Diplomas y certificaciones</h3><p>Resultados y documentos obtenidos durante su formación y participación en torneos.</p><button class="btn light" type="button" onclick="openGallery()">Ver los 9 documentos</button></div>
           </article>
           <article class="document-card">
-            <img src="assets/oxapampa-medallas.jpg" alt="Ignacio con sus medallas recientes" loading="lazy">
-            <div class="body"><h3>Dosier institucional</h3><p>Trayectoria, resultados, necesidades y alternativas de colaboración.</p><a class="btn red" href="dossier-final.pdf" target="_blank" rel="noopener">Descargar dosier</a></div>
+            <img src="assets/hero-ignacio-medallas.jpg" alt="Ignacio con sus medallas deportivas" loading="lazy">
+            <div class="body"><h3>Dosier de patrocinio</h3><p>Trayectoria, necesidades, canales de aporte, niveles de patrocinio y beneficios para cada aliado.</p><a class="btn red" href="dossier-final.pdf" target="_blank" rel="noopener">Descargar dosier</a></div>
           </article>
         </div>
       </div>
@@ -660,6 +726,10 @@
                 <select id="supportType" name="supportType">
                   <option>Deseo conocer el proyecto</option>
                   <option>Patrocinio integral</option>
+                  <option>Aliado deportivo</option>
+                  <option>Patrocinador Bronce</option>
+                  <option>Patrocinador Plata</option>
+                  <option>Patrocinador Oro</option>
                   <option>Apoyo por componente</option>
                   <option>Apoyo en especie</option>
                   <option>Difusión y conexión</option>
@@ -687,7 +757,7 @@
         <div>
           <div class="eyebrow light">Gracias por creer en el talento peruano</div>
           <h2>Hoy puedes ser parte de esta historia.</h2>
-          <p>Cada entrenamiento fortalece su disciplina. Cada competencia construye su carácter. Cada aliado ayuda a hacer posible una experiencia deportiva internacional.</p>
+          <p>Cada entrenamiento fortalece su disciplina. Cada competencia construye su carácter. Cada aliado ayuda a hacer posible una experiencia deportiva internacional que marcará su crecimiento.</p>
           <div class="hero-actions">
             <a class="btn dark" href="#participar">Quiero participar</a>
             <a class="btn light" href="dossier-final.pdf" target="_blank" rel="noopener">Revisar el dosier</a>
@@ -715,7 +785,7 @@
     <div class="gallery-shell">
       <div class="gallery-head"><div><div class="eyebrow gallery-light">Respaldo deportivo</div><h2>Diplomas y certificaciones</h2></div><button class="modal-close inline" type="button" aria-label="Cerrar" onclick="closeGallery()">✕</button></div>
       <div class="gallery">
-        <button type="button" onclick="openImage('assets/oxapampa-competencia.jpg', 'I Descentralizado Ki-Baek · Oxapampa 2026')"><img src="assets/oxapampa-competencia.jpg" alt="Ignacio con diploma y medallas de Oxapampa 2026" loading="lazy"><span>I Descentralizado Ki-Baek · Oxapampa 2026</span></button>
+        <button type="button" onclick="openImage('assets/diploma-oxapampa-2026.jpg', 'Diploma de logros Oxapampa 2026')"><img src="assets/diploma-oxapampa-2026.jpg" alt="Diploma de logros Oxapampa 2026" loading="lazy"><span>Oxapampa 2026 · Tres medallas</span></button>
         <button type="button" onclick="openImage('assets/img-08-15639fdfeb.jpg', 'IV Copa Juche')"><img src="assets/img-08-15639fdfeb.jpg" alt="Diploma IV Copa Juche" loading="lazy"><span>IV Copa Juche</span></button>
         <button type="button" onclick="openImage('assets/img-15-dfe722ee0a.jpg', 'Certificado ITF')"><img src="assets/img-15-dfe722ee0a.jpg" alt="Certificado ITF" loading="lazy"><span>Certificado ITF</span></button>
         <button type="button" onclick="openImage('assets/img-16-fda28ef83b.jpg', 'IV Torneo Copa Juche')"><img src="assets/img-16-fda28ef83b.jpg" alt="Diploma IV Torneo Copa Juche" loading="lazy"><span>IV Torneo Copa Juche</span></button>
