@@ -184,19 +184,14 @@
     .medal strong { align-self: end; display: block; color: var(--navy); font-size: 1.06rem; }
     .medal span { align-self: start; margin-top: 1px; color: #4c5663; font-size: .82rem; }
 
-    .news { background: #fff; }
-    .news-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
-    .news-card { overflow: hidden; display: grid; grid-template-rows: 500px auto; background: var(--soft); border: 1px solid var(--line); border-radius: 22px; box-shadow: 0 16px 38px rgba(17,24,42,.08); }
-    .news-card > img { width: 100%; height: 500px; object-fit: cover; }
-    .news-card.oxapampa > img { object-position: center 45%; }
-    .news-card.focaccias > img { object-fit: contain; background: #f4eadb; }
-    .news-body { display: flex; flex-direction: column; align-items: flex-start; padding: 25px; }
-    .news-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 13px; }
-    .news-tag, .news-date { padding: 5px 9px; border-radius: 999px; font-size: .72rem; font-weight: 900; }
-    .news-tag { color: #fff; background: var(--red); }
-    .news-date { color: var(--navy); background: #e4e8ed; }
-    .news-body h3 { margin: 0 0 9px; color: var(--navy); font-size: 1.6rem; line-height: 1.15; }
-    .news-body p { flex: 1; margin: 0 0 19px; color: var(--muted); }
+    .news-teaser { padding: 42px 0; background: #fff; }
+    .news-hub-card { display: grid; grid-template-columns: 1fr auto; gap: 34px; align-items: center; padding: 30px 34px; color: #fff; background: linear-gradient(118deg, var(--navy), #202d49); border-radius: 22px; box-shadow: var(--shadow); }
+    .news-hub-card .eyebrow { color: #ff8993; }
+    .news-hub-card h2 { margin: 6px 0 8px; font-size: clamp(1.8rem, 3.4vw, 2.75rem); line-height: 1.05; letter-spacing: -.035em; }
+    .news-hub-card p { max-width: 760px; margin: 0; color: #d3dbea; }
+    .news-hub-topics { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 16px; }
+    .news-hub-topics span { padding: 6px 10px; color: #fff; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.16); border-radius: 999px; font-size: .76rem; font-weight: 850; }
+    .news-hub-action { min-width: 205px; }
 
     .timeline { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
     .time-card { padding: 21px; background: #fff; border: 1px solid var(--line); border-top: 5px solid var(--red); border-radius: 17px; }
@@ -340,7 +335,6 @@
       .event-fact:nth-child(3) { border-left: 0; border-top: 1px solid var(--line); }
       .event-fact:nth-child(4) { border-top: 1px solid var(--line); }
       .result-grid { grid-template-columns: 1fr; }
-      .news-grid { grid-template-columns: 1fr; }
       .alliance-grid, .sponsor-grid, .needs, .benefit-grid, .timeline { grid-template-columns: repeat(2, 1fr); }
       .document-grid { grid-template-columns: 1fr 1fr; }
       .logo-groups { grid-template-columns: 1fr; }
@@ -363,8 +357,8 @@
       .result-main { height: 520px; }
       .action-shot { height: 260px; }
       .medal-card { display: grid; }
-      .news-card { grid-template-rows: 430px auto; }
-      .news-card > img { height: 430px; }
+      .news-hub-card { grid-template-columns: 1fr; gap: 22px; padding: 26px 23px; }
+      .news-hub-action { width: 100%; }
       .section-head { display: block; }
       .section-head > p { margin-top: 15px; }
       .closing img { height: 370px; }
@@ -376,7 +370,7 @@
     <div class="wrap navbar">
       <a class="brand" href="#inicio">IGNACIO <span>TKD PERÚ</span></a>
       <div class="navlinks" id="navlinks">
-        <a href="#noticias">Noticias</a>
+        <a href="noticias.html">Noticias</a>
         <a href="#historia">Historia</a>
         <a href="#logros">Logros</a>
         <a href="#world-games">World Games</a>
@@ -425,31 +419,16 @@
   </section>
 
   <main>
-    <section class="news" id="noticias">
+    <section class="news-teaser" id="noticias">
       <div class="wrap">
-        <div class="section-head">
-          <div><div class="eyebrow">Actualidad</div><h2>Noticias del camino de Ignacio</h2></div>
-          <p>Resultados, actividades y nuevas maneras de acompañar su preparación deportiva rumbo a Uruguay.</p>
-        </div>
-        <div class="news-grid">
-          <article class="news-card oxapampa">
-            <img src="assets/oxapampa-podio-2026.jpg" alt="Ignacio en el primer lugar del podio durante el torneo de Oxapampa" loading="lazy">
-            <div class="news-body">
-              <div class="news-meta"><span class="news-tag">Último resultado</span><span class="news-date">8 de agosto de 2026</span></div>
-              <h3>Tres medallas en Oxapampa</h3>
-              <p>Ignacio obtuvo el 1.er puesto en combate, el 1.er puesto en rotura especial y el 2.º puesto en tul durante el I Descentralizado Ki-Baek Oxapampa 2026.</p>
-              <a class="btn dark" href="#logros">Ver fotografías y resultados</a>
-            </div>
-          </article>
-          <article class="news-card focaccias">
-            <img src="assets/noticia-focaccias.jpg" alt="Campaña de focaccias artesanales para apoyar el viaje deportivo de Ignacio" loading="lazy">
-            <div class="news-body">
-              <div class="news-meta"><span class="news-tag">Campaña activa</span><span class="news-date">Entrega 1 de septiembre</span></div>
-              <h3>Focaccias para impulsar su viaje</h3>
-              <p>Casa Vittorio prepara focaccias artesanales. Cada compra contribuye a cubrir la preparación y el viaje de Ignacio. Puedes elegir tus ingredientes y reservar directamente por WhatsApp.</p>
-              <a class="btn red" href="https://wa.me/51987760581?text=Hola%2C%20quiero%20reservar%20focaccias%20y%20apoyar%20el%20viaje%20de%20Ignacio." target="_blank" rel="noopener">Reservar por WhatsApp</a>
-            </div>
-          </article>
+        <div class="news-hub-card">
+          <div>
+            <div class="eyebrow">Noticias y actividades</div>
+            <h2>Actualidad y actividades pro fondos</h2>
+            <p>Las novedades deportivas y las campañas de apoyo se muestran en una sección independiente para mantener esta página enfocada en la trayectoria y la propuesta de patrocinio.</p>
+            <div class="news-hub-topics"><span>Oxapampa 2026</span><span>Actividades pro fondos</span><span>Focaccias solidarias</span></div>
+          </div>
+          <a class="btn red news-hub-action" href="noticias.html">Ver noticias y actividades</a>
         </div>
       </div>
     </section>

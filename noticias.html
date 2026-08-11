@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11182a">
+  <meta name="description" content="Noticias deportivas y actividades pro fondos de Ignacio TKD Perú rumbo a los II World Games Taekwon-Do ITF 2026.">
+  <meta property="og:title" content="Noticias y actividades | Ignacio TKD Perú">
+  <meta property="og:description" content="Resultados deportivos, campañas y actividades que acompañan la preparación de Ignacio rumbo a Uruguay.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ignaciotkdperu-dotcom.github.io/ignaciotkdperu/noticias.html">
+  <meta property="og:image" content="https://ignaciotkdperu-dotcom.github.io/ignaciotkdperu/assets/oxapampa-podio-peru.jpg">
+  <title>Noticias y actividades | Ignacio TKD Perú</title>
+  <style>
+    :root {
+      --red: #d71920;
+      --red-dark: #a90f16;
+      --navy: #11182a;
+      --navy-soft: #1c263d;
+      --olive: #606b3f;
+      --gold: #d7a91c;
+      --ink: #20242b;
+      --muted: #657080;
+      --soft: #f4f6f8;
+      --line: #dde2e8;
+      --white: #ffffff;
+      --shadow: 0 20px 52px rgba(17,24,42,.13);
+      --radius: 22px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--ink); background: #fff; font-family: Inter, Aptos, "Segoe UI", Arial, sans-serif; line-height: 1.58; }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    .wrap { width: min(1180px, 92%); margin-inline: auto; }
+    .eyebrow { color: var(--red); font-size: .73rem; font-weight: 900; letter-spacing: .15em; text-transform: uppercase; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 12px 18px; border: 1px solid transparent; border-radius: 12px; font-weight: 850; transition: transform .2s ease, box-shadow .2s ease; }
+    .btn:hover { transform: translateY(-2px); }
+    .btn.red { color: #fff; background: var(--red); box-shadow: 0 12px 28px rgba(215,25,32,.22); }
+    .btn.dark { color: #fff; background: var(--navy); }
+    .btn.light { color: var(--navy); background: #fff; border-color: var(--line); }
+
+    nav { position: sticky; top: 0; z-index: 20; background: rgba(255,255,255,.96); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+    .navbar { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 22px; }
+    .brand { color: var(--navy); font-weight: 950; letter-spacing: .02em; white-space: nowrap; }
+    .brand span { color: var(--red); }
+    .navlinks { display: flex; align-items: center; gap: 20px; font-size: .88rem; font-weight: 800; }
+    .navlinks a:hover { color: var(--red); }
+
+    .news-hero { padding: 72px 0; color: #fff; background: radial-gradient(circle at 86% 20%, rgba(215,169,28,.22), transparent 25%), linear-gradient(118deg, var(--navy), #202d49); }
+    .hero-grid { display: grid; grid-template-columns: 1.12fr .88fr; gap: 45px; align-items: center; }
+    .news-hero .eyebrow { color: #ff8993; }
+    .news-hero h1 { margin: 10px 0 18px; max-width: 760px; font-size: clamp(3.1rem, 7vw, 6.2rem); line-height: .93; letter-spacing: -.055em; }
+    .news-hero p { max-width: 710px; color: #d5ddea; font-size: 1.05rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 11px; margin-top: 26px; }
+    .hero-summary { display: grid; gap: 14px; }
+    .summary-card { padding: 22px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.16); border-radius: 18px; }
+    .summary-card b { display: block; margin: 5px 0 3px; font-size: 1.25rem; }
+    .summary-card span { color: #cdd5e2; font-size: .9rem; }
+
+    section { padding: 82px 0; scroll-margin-top: 72px; }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 34px; margin-bottom: 34px; }
+    .section-head h2 { margin: 7px 0 0; font-size: clamp(2.2rem, 4.5vw, 4rem); line-height: 1; letter-spacing: -.045em; }
+    .section-head > p { max-width: 610px; margin: 0; color: var(--muted); }
+
+    .sports-card { overflow: hidden; display: grid; grid-template-columns: 1.05fr .95fr; background: var(--navy); border-radius: 25px; box-shadow: var(--shadow); }
+    .sports-gallery { min-height: 650px; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 3px; background: #fff; }
+    .sports-gallery img { width: 100%; height: 100%; object-fit: cover; }
+    .sports-gallery img:first-child { grid-row: 1 / 3; object-position: center 44%; }
+    .sports-copy { padding: 38px; color: #fff; }
+    .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 17px; }
+    .tag, .date { padding: 6px 10px; border-radius: 999px; font-size: .72rem; font-weight: 900; }
+    .tag { background: var(--red); }
+    .date { color: var(--navy); background: #fff; }
+    .sports-copy h3 { margin: 0 0 12px; font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1; }
+    .sports-copy > p { color: #cdd5e2; }
+    .result-list { display: grid; gap: 9px; margin: 24px 0; }
+    .result { display: grid; grid-template-columns: 46px 1fr; align-items: center; padding: 11px 13px; color: var(--navy); background: #fff; border-radius: 13px; }
+    .place { width: 36px; height: 36px; display: grid; place-items: center; color: #fff; background: #b78300; border-radius: 50%; font-weight: 950; }
+    .result.silver .place { background: #68717c; }
+    .result b { display: block; }
+    .result small { color: var(--muted); }
+
+    .fundraising { background: var(--soft); }
+    .fundraiser-card { overflow: hidden; display: grid; grid-template-columns: .9fr 1.1fr; background: #fff; border: 1px solid var(--line); border-radius: 25px; box-shadow: var(--shadow); }
+    .fundraiser-visual { min-height: 620px; display: grid; place-items: center; padding: 24px; background: #f4eadb; }
+    .fundraiser-visual img { width: 100%; height: 100%; max-height: 590px; object-fit: contain; }
+    .fundraiser-copy { padding: 40px; }
+    .fundraiser-copy h3 { margin: 10px 0 12px; color: var(--navy); font-size: clamp(2.2rem, 4vw, 3.6rem); line-height: 1; }
+    .fundraiser-copy > p { color: var(--muted); }
+    .offer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 11px; margin: 24px 0; }
+    .offer { padding: 17px; text-align: center; color: var(--navy); background: var(--soft); border-radius: 14px; }
+    .offer span { display: block; color: var(--muted); font-size: .82rem; font-weight: 800; }
+    .offer b { display: block; color: var(--red-dark); font-size: 1.65rem; }
+    .detail-box { margin: 13px 0; padding: 17px; color: var(--muted); background: #fffdf7; border: 1px solid #eadfbd; border-left: 5px solid var(--gold); border-radius: 12px; }
+    .detail-box b { color: var(--navy); }
+    .fundraiser-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+    .participation { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top: 25px; }
+    .participation article { padding: 22px; background: #fff; border: 1px solid var(--line); border-radius: 17px; }
+    .participation strong { display: block; margin-bottom: 6px; color: var(--navy); font-size: 1.08rem; }
+    .participation p { margin: 0; color: var(--muted); font-size: .9rem; }
+
+    .closing { padding: 62px 0; color: #fff; background: linear-gradient(118deg, var(--red), var(--red-dark)); }
+    .closing-grid { display: grid; grid-template-columns: 1fr auto; gap: 30px; align-items: center; }
+    .closing h2 { margin: 5px 0 10px; font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1; }
+    .closing p { max-width: 760px; margin: 0; color: #ffe7e9; }
+    footer { padding: 30px 0; color: #b7bfce; background: #0c1120; }
+    .footer-grid { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; font-size: .88rem; }
+    footer strong { color: #fff; }
+
+    @media (max-width: 900px) {
+      .navlinks a:not(.nav-home) { display: none; }
+      .hero-grid, .sports-card, .fundraiser-card { grid-template-columns: 1fr; }
+      .hero-summary { grid-template-columns: 1fr 1fr; }
+      .fundraiser-visual { min-height: 520px; }
+      .participation { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 620px) {
+      .navbar { min-height: 64px; }
+      .navbar { gap: 10px; }
+      .navlinks { display: none; }
+      .navbar > .btn { min-height: 44px; padding: 10px 14px; }
+      .news-hero { padding: 53px 0; }
+      .news-hero h1 { font-size: 3.35rem; }
+      .hero-summary, .sports-gallery, .offer-grid, .closing-grid { grid-template-columns: 1fr; }
+      .sports-gallery { min-height: 0; grid-template-rows: 430px 230px 230px; }
+      .sports-gallery img:first-child { grid-row: auto; }
+      .sports-copy, .fundraiser-copy { padding: 27px 22px; }
+      .fundraiser-visual { min-height: 420px; padding: 14px; }
+      .fundraiser-actions .btn, .closing .btn { width: 100%; }
+      .section-head { display: block; }
+      .section-head > p { margin-top: 14px; }
+      section { padding: 62px 0; }
+    }
+  </style>
+</head>
+<body>
+  <nav aria-label="Navegación principal">
+    <div class="wrap navbar">
+      <a class="brand" href="index.html">IGNACIO <span>TKD PERÚ</span></a>
+      <div class="navlinks">
+        <a class="nav-home" href="index.html">Inicio</a>
+        <a href="#deportivas">Noticias deportivas</a>
+        <a href="#fondos">Actividades pro fondos</a>
+        <a href="index.html#alianzas">Patrocinio</a>
+      </div>
+      <a class="btn red" href="index.html#participar">Participar</a>
+    </div>
+  </nav>
+
+  <header class="news-hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Sección independiente</div>
+        <h1>Noticias y actividades</h1>
+        <p>Resultados deportivos, novedades y actividades pro fondos que acompañan la preparación de Ignacio rumbo a los II World Games Taekwon-Do ITF 2026.</p>
+        <div class="hero-actions">
+          <a class="btn red" href="#fondos">Ver actividades pro fondos</a>
+          <a class="btn light" href="index.html">Volver a la página principal</a>
+        </div>
+      </div>
+      <div class="hero-summary">
+        <div class="summary-card"><div class="eyebrow">Último resultado</div><b>3 medallas en Oxapampa</b><span>Dos primeros puestos y un segundo puesto.</span></div>
+        <div class="summary-card"><div class="eyebrow">Actividad vigente</div><b>Focaccias solidarias</b><span>Compra, comparte y ayuda a impulsar su viaje.</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="deportivas">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="eyebrow">Noticias deportivas</div><h2>El esfuerzo se convierte en resultados</h2></div>
+          <p>Esta sección reúne las participaciones y logros recientes sin restar protagonismo a la trayectoria y propuesta de patrocinio de la página principal.</p>
+        </div>
+        <article class="sports-card">
+          <div class="sports-gallery">
+            <img src="assets/oxapampa-podio-peru.jpg" alt="Ignacio en el primer lugar del podio con la bandera del Perú">
+            <img src="assets/oxapampa-accion-salto.jpg" alt="Ignacio ejecuta una técnica durante la competencia en Oxapampa" loading="lazy">
+            <img src="assets/oxapampa-accion-combate.jpg" alt="Ignacio concentrado durante un encuentro en Oxapampa" loading="lazy">
+          </div>
+          <div class="sports-copy">
+            <div class="meta"><span class="tag">Último resultado</span><span class="date">8 de agosto de 2026</span></div>
+            <h3>Tres medallas en Oxapampa</h3>
+            <p>Durante el I Descentralizado Ki-Baek, Ignacio compitió en tres modalidades y obtuvo resultados que reflejan su disciplina y continuidad deportiva.</p>
+            <div class="result-list">
+              <div class="result"><span class="place">1</span><div><b>Primer puesto</b><small>Combate · Matsogi</small></div></div>
+              <div class="result"><span class="place">1</span><div><b>Primer puesto</b><small>Rotura especial · Tukgi</small></div></div>
+              <div class="result silver"><span class="place">2</span><div><b>Segundo puesto</b><small>Formas · Tul</small></div></div>
+            </div>
+            <a class="btn red" href="index.html#logros">Ver este logro en su trayectoria</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="fundraising" id="fondos">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="eyebrow">Actividades pro fondos</div><h2>Campañas que acercan la meta</h2></div>
+          <p>Cada actividad se presenta de manera independiente, con su información, forma de participar y contacto directo.</p>
+        </div>
+        <article class="fundraiser-card">
+          <div class="fundraiser-visual"><img src="assets/noticia-focaccias.jpg" alt="Campaña de focaccias artesanales para apoyar el viaje deportivo de Ignacio"></div>
+          <div class="fundraiser-copy">
+            <div class="meta"><span class="tag">Campaña activa</span><span class="date">Entrega 1 de septiembre</span></div>
+            <h3>Focaccias para impulsar su viaje</h3>
+            <p>Casa Vittorio prepara focaccias artesanales. Cada compra contribuye a cubrir parte de la preparación y el viaje deportivo de Ignacio.</p>
+            <div class="offer-grid">
+              <div class="offer"><span>Una focaccia</span><b>S/ 30</b></div>
+              <div class="offer"><span>Dos focaccias</span><b>S/ 50</b></div>
+            </div>
+            <div class="detail-box"><b>Opciones:</b> romero, queso, aceituna verde y cebolla blanca.</div>
+            <div class="detail-box"><b>Especial:</b> jamón y tocino por S/ 3 adicionales.</div>
+            <div class="fundraiser-actions">
+              <a class="btn red" href="https://wa.me/51987760581?text=Hola%2C%20quiero%20reservar%20focaccias%20y%20apoyar%20el%20viaje%20de%20Ignacio." target="_blank" rel="noopener">Reservar por WhatsApp</a>
+              <a class="btn light" href="index.html#participar">Ver otras formas de participar</a>
+            </div>
+          </div>
+        </article>
+        <div class="participation">
+          <article><strong>Compra</strong><p>Reserva una o dos focaccias y elige la opción que prefieras.</p></article>
+          <article><strong>Comparte</strong><p>Envía esta actividad a familiares, amistades o compañeros de trabajo.</p></article>
+          <article><strong>Conecta</strong><p>Preséntanos a empresas o instituciones que puedan sumarse como aliadas.</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="closing">
+    <div class="wrap closing-grid">
+      <div><div class="eyebrow" style="color:#ffd8dc">Conoce el proyecto completo</div><h2>La historia deportiva sigue siendo la protagonista.</h2><p>Revisa la trayectoria, el dosier de patrocinio, los niveles de apoyo y los canales de participación en la página principal.</p></div>
+      <a class="btn light" href="index.html">Volver al proyecto de Ignacio</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <div><strong>IGNACIO TKD PERÚ</strong><br>Disciplina peruana rumbo a Uruguay</div>
+      <div>@ignaciotkdperu · +51 987 760 581<br>ignaciotkdperu@gmail.com</div>
+      <div>Información actualizada · Agosto 2026</div>
+    </div>
+  </footer>
+</body>
+</html>
