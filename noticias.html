@@ -9,7 +9,7 @@
   <meta property="og:description" content="Resultados deportivos, campañas y actividades que acompañan la preparación de Ignacio rumbo a Uruguay.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ignaciotkdperu-dotcom.github.io/ignaciotkdperu/noticias.html">
-  <meta property="og:image" content="https://ignaciotkdperu-dotcom.github.io/ignaciotkdperu/assets/pollada-pro-fondos-agosto-2026.jpg">
+  <meta property="og:image" content="https://ignaciotkdperu-dotcom.github.io/ignaciotkdperu/assets/rifa-ignacio-2026-valores-premios.jpg">
   <title>Noticias y actividades | Ignacio TKD Perú</title>
   <style>
     :root {
@@ -84,7 +84,9 @@
     .fundraising { background: var(--soft); }
     .fundraiser-card { overflow: hidden; display: grid; grid-template-columns: .9fr 1.1fr; background: #fff; border: 1px solid var(--line); border-radius: 25px; box-shadow: var(--shadow); }
     .fundraiser-card + .fundraiser-card { margin-top: 34px; }
-    .fundraiser-card.pollada .fundraiser-visual { background: linear-gradient(145deg, #e8edf4, #fff5dc); }
+    .fundraiser-card.raffle .fundraiser-visual { background: linear-gradient(145deg, #dcefff, #fff5cf); }
+    .fundraiser-card.pollada .fundraiser-visual { overflow: hidden; background: linear-gradient(145deg, #e8edf4, #fff5dc); }
+    .fundraiser-card.pollada .fundraiser-visual img { object-fit: cover; }
     .fundraiser-visual { min-height: 620px; display: grid; place-items: center; padding: 24px; background: #f4eadb; }
     .fundraiser-visual img { width: 100%; height: 100%; max-height: 590px; object-fit: contain; }
     .fundraiser-copy { padding: 40px; }
@@ -96,6 +98,11 @@
     .offer b { display: block; color: var(--red-dark); font-size: 1.65rem; }
     .detail-box { margin: 13px 0; padding: 17px; color: var(--muted); background: #fffdf7; border: 1px solid #eadfbd; border-left: 5px solid var(--gold); border-radius: 12px; }
     .detail-box b { color: var(--navy); }
+    .prize-values { display: grid; gap: 9px; margin: 20px 0; }
+    .prize-value { display: grid; grid-template-columns: 1fr auto; gap: 18px; align-items: center; padding: 12px 14px; background: var(--soft); border: 1px solid var(--line); border-radius: 12px; }
+    .prize-value span { color: var(--navy); font-size: .88rem; font-weight: 800; }
+    .prize-value b { color: var(--red-dark); white-space: nowrap; }
+    .reference-note { margin: -4px 0 0; color: var(--muted); font-size: .78rem; }
     .fundraiser-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
     .participation { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top: 25px; }
     .participation article { padding: 22px; background: #fff; border: 1px solid var(--line); border-radius: 17px; }
@@ -129,6 +136,8 @@
       .sports-gallery img:first-child { grid-row: auto; }
       .sports-copy, .fundraiser-copy { padding: 27px 22px; }
       .fundraiser-visual { min-height: 420px; padding: 14px; }
+      .prize-value { grid-template-columns: 1fr; gap: 3px; }
+      .prize-value b { white-space: normal; }
       .fundraiser-actions .btn, .closing .btn { width: 100%; }
       .section-head { display: block; }
       .section-head > p { margin-top: 14px; }
@@ -159,11 +168,12 @@
         <div class="hero-actions">
           <a class="btn red" href="#fondos">Ver actividades pro fondos</a>
           <a class="btn light" href="index.html">Volver a la página principal</a>
+          <a class="btn light" href="https://www.instagram.com/ignaciotkdperu/" target="_blank" rel="noopener">Instagram · @ignaciotkdperu</a>
         </div>
       </div>
       <div class="hero-summary">
         <div class="summary-card"><div class="eyebrow">Último resultado</div><b>3 medallas en Oxapampa</b><span>Dos primeros puestos y un segundo puesto.</span></div>
-        <div class="summary-card"><div class="eyebrow">Actividad vigente</div><b>Pollada pro fondos · S/20</b><span>Viernes 28 de agosto. Reserva tu plato y acerca a Ignacio a Uruguay.</span></div>
+        <div class="summary-card"><div class="eyebrow">Actividad vigente</div><b>Rifa pro fondos · S/25</b><span>Más de S/2,300 en premios. Cada número acerca a Ignacio a Uruguay.</span></div>
       </div>
     </div>
   </header>
@@ -202,6 +212,26 @@
           <div><div class="eyebrow">Actividades pro fondos</div><h2>Campañas que acercan la meta</h2></div>
           <p>Cada actividad se presenta de manera independiente, con su información, forma de participar y contacto directo.</p>
         </div>
+        <article class="fundraiser-card raffle" id="rifa">
+          <div class="fundraiser-visual"><img src="assets/rifa-ignacio-2026-valores-premios.jpg" alt="Rifa pro fondos de Ignacio con cuatro premios y sus valores referenciales"></div>
+          <div class="fundraiser-copy">
+            <div class="meta"><span class="tag">Campaña activa</span><span class="date">S/25 por número</span></div>
+            <h3>Rifa pro fondos: más de S/2,300 en premios</h3>
+            <p>Participa por solo S/25 y acompaña la preparación de Ignacio para los II World Games Taekwon-Do ITF 2026 en Uruguay.</p>
+            <div class="prize-values" aria-label="Premios y valores referenciales">
+              <div class="prize-value"><span>1.er premio · Smart TV JVC 58” QLED Pro 4K</span><b>S/1,300</b></div>
+              <div class="prize-value"><span>2.º premio · Set de 3 electrodomésticos BELUWER</span><b>Aprox. S/300</b></div>
+              <div class="prize-value"><span>3.er premio · Parrilla eléctrica Magefesa</span><b>Aprox. S/250</b></div>
+              <div class="prize-value"><span>4.º premio · 2 pasajes terrestres de ida y vuelta</span><b>Hasta S/500</b></div>
+            </div>
+            <p class="reference-note">Valores referenciales al 17 de agosto de 2026 y sujetos a variación. Los pasajes serán Lima–Trujillo o Lima–Chiclayo, a elección del ganador; su valor dependerá de la empresa, ruta y fecha de viaje.</p>
+            <div class="detail-box"><b>Tu número hace la diferencia:</b> además de participar por uno de los cuatro premios, contribuyes directamente al objetivo deportivo de Ignacio.</div>
+            <div class="fundraiser-actions">
+              <a class="btn red" href="https://wa.me/51987760581?text=Hola%2C%20quiero%20comprar%20un%20n%C3%BAmero%20de%20la%20rifa%20pro%20fondos%20de%20Ignacio." target="_blank" rel="noopener">Comprar un número</a>
+              <a class="btn light" href="index.html#participar">Conocer el proyecto</a>
+            </div>
+          </div>
+        </article>
         <article class="fundraiser-card pollada" id="pollada">
           <div class="fundraiser-visual"><img src="assets/pollada-pro-fondos-agosto-2026.jpg" alt="Pollada pro fondos para apoyar el viaje deportivo de Ignacio a Uruguay"></div>
           <div class="fundraiser-copy">
@@ -209,10 +239,11 @@
             <h3>Pollada pro fondos: cada plato acerca a Ignacio a Uruguay</h3>
             <p>Únete a esta actividad solidaria y ayúdanos a impulsar la preparación y el viaje deportivo de Ignacio a los II World Games Taekwon-Do ITF 2026, en Punta del Este.</p>
             <div class="offer-grid">
-              <div class="offer"><span>Plato solidario</span><b>S/ 20</b></div>
+              <div class="offer"><span>Plato solidario</span><b>S/ 25</b></div>
               <div class="offer"><span>Fecha de entrega</span><b>28 de agosto</b></div>
             </div>
-            <div class="detail-box"><b>Incluye:</b> pollo doradito, papas sancochadas, ensalada y ajicito.</div>
+            <div class="detail-box"><b>Incluye:</b> pollo doradito, arroz, papas sancochadas, ensalada y ajicito.</div>
+            <div class="detail-box"><b>¡Pide con todo tu equipo!</b> Reúne a tu familia, amistades o compañeros de trabajo para disfrutar juntos. Coordinaremos la entrega de los pedidos grupales.</div>
             <div class="detail-box"><b>Tu apoyo cuenta:</b> cada reserva contribuye a cubrir las necesidades de su preparación y participación internacional.</div>
             <div class="fundraiser-actions">
               <a class="btn red" href="https://wa.me/51987760581?text=Hola%2C%20quiero%20reservar%20una%20pollada%20pro%20fondos%20y%20apoyar%20el%20viaje%20de%20Ignacio%20a%20Uruguay." target="_blank" rel="noopener">Reservar por WhatsApp</a>
@@ -239,7 +270,7 @@
           </div>
         </article>
         <div class="participation">
-          <article><strong>Reserva</strong><p>Separa tu pollada o participa en cualquiera de las campañas vigentes.</p></article>
+          <article><strong>Participa</strong><p>Elige un número de la rifa, separa tu pollada o súmate a otra campaña vigente.</p></article>
           <article><strong>Comparte</strong><p>Envía esta actividad a familiares, amistades o compañeros de trabajo.</p></article>
           <article><strong>Conecta</strong><p>Preséntanos a empresas o instituciones que puedan sumarse como aliadas.</p></article>
         </div>
@@ -257,7 +288,7 @@
   <footer>
     <div class="wrap footer-grid">
       <div><strong>IGNACIO TKD PERÚ</strong><br>Disciplina peruana rumbo a Uruguay</div>
-      <div>@ignaciotkdperu · +51 987 760 581<br>ignaciotkdperu@gmail.com</div>
+      <div><a href="https://www.instagram.com/ignaciotkdperu/" target="_blank" rel="noopener" aria-label="Abrir Instagram de Ignacio TKD Perú"><strong>@ignaciotkdperu</strong></a> · +51 987 760 581<br><a href="mailto:ignaciotkdperu@gmail.com">ignaciotkdperu@gmail.com</a></div>
       <div>Información actualizada · Agosto 2026</div>
     </div>
   </footer>
