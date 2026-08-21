@@ -685,8 +685,8 @@
             <div class="account"><div class="account-title"><b>Titular</b><span>Rossmery Albarrán Taype</span></div></div>
             <div class="private-note">Luego de realizar un aporte, escríbenos para confirmar la operación y coordinar la forma de reconocimiento correspondiente.</div>
             <div class="progress-wrap">
-              <div class="progress-head"><span>Avance del proyecto</span><span id="progressLabel">0%</span></div>
-              <progress class="progress" id="progressBar" aria-label="Avance del proyecto" max="100" value="0">0%</progress>
+              <div class="progress-head"><span>Avance del proyecto</span><span id="progressLabel">10% del camino recorrido</span></div>
+              <progress class="progress" id="progressBar" aria-label="Avance del proyecto" max="100" value="10">10%</progress>
             </div>
           </div>
 
@@ -782,7 +782,7 @@
 
   <script>
     const whatsappNumber = "51987760581";
-    const projectProgress = 0;
+    const projectProgress = 10;
 
     function toggleMenu(button) {
       const menu = document.getElementById("navlinks");
@@ -873,7 +873,7 @@
     const safeProgress = Math.min(100, Math.max(0, projectProgress));
     document.getElementById("progressBar").value = safeProgress;
     document.getElementById("progressBar").textContent = `${safeProgress}%`;
-    document.getElementById("progressLabel").textContent = `${safeProgress}%`;
+    document.getElementById("progressLabel").textContent = `${safeProgress}% del camino recorrido`;
   </script>
 </body>
 </html>
