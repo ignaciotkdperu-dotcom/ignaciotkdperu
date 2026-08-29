@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#11182a">
-  <meta name="description" content="Noticias deportivas y actividades pro fondos de Ignacio TKD Perú rumbo a los II World Games Taekwon-Do ITF 2026.">
-  <meta property="og:title" content="Noticias y actividades | Ignacio TKD Perú">
-  <meta property="og:description" content="Resultados deportivos, campañas y actividades que acompañan la preparación de Ignacio rumbo a Uruguay.">
+  <meta name="description" content="Noticias deportivas, apariciones en medios y actividades pro fondos de Ignacio TKD Perú rumbo a los II World Games Taekwon-Do ITF 2026.">
+  <meta property="og:title" content="Noticias y medios | Ignacio TKD Perú">
+  <meta property="og:description" content="Resultados deportivos, apariciones en medios y actividades que acompañan la preparación de Ignacio rumbo a Uruguay.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ignaciotkdperu-dotcom.github.io/ignaciotkdperu/noticias.html">
   <meta property="og:image" content="https://ignaciotkdperu-dotcom.github.io/ignaciotkdperu/assets/hero-ignacio-medallas.jpg">
-  <title>Noticias y actividades | Ignacio TKD Perú</title>
+  <title>Noticias y medios | Ignacio TKD Perú</title>
   <style>
     :root {
       --red: #d71920;
@@ -57,6 +57,19 @@
     .summary-card { padding: 22px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.16); border-radius: 18px; }
     .summary-card b { display: block; margin: 5px 0 3px; font-size: 1.25rem; }
     .summary-card span { color: #cdd5e2; font-size: .9rem; }
+
+    .media-section { background: var(--soft); }
+    .press-card { overflow: hidden; display: grid; grid-template-columns: .82fr 1.18fr; background: #fff; border: 1px solid var(--line); border-radius: 25px; box-shadow: var(--shadow); }
+    .press-visual { min-height: 640px; display: grid; place-items: center; padding: 24px; background: linear-gradient(145deg, #e6ebf2, #f8fafc); }
+    .press-visual img { width: 100%; height: 100%; max-height: 610px; object-fit: contain; border-radius: 14px; box-shadow: 0 14px 30px rgba(17,24,42,.14); }
+    .press-copy { display: flex; flex-direction: column; justify-content: center; padding: 42px; }
+    .press-copy .date { background: var(--soft); }
+    .press-source { margin: 0 0 10px; color: var(--red-dark); font-size: .82rem; font-weight: 900; letter-spacing: .04em; text-transform: uppercase; }
+    .press-copy h3 { margin: 0 0 14px; color: var(--navy); font-size: clamp(2.4rem, 5vw, 4.4rem); line-height: .95; letter-spacing: -.045em; }
+    .press-copy > p:not(.press-source) { color: var(--muted); }
+    .press-detail { margin: 17px 0 24px; padding: 17px 18px; color: var(--muted); background: var(--soft); border-left: 5px solid var(--gold); border-radius: 12px; font-size: .9rem; }
+    .press-detail strong { color: var(--navy); }
+    .press-actions { display: flex; flex-wrap: wrap; gap: 10px; }
 
     section { padding: 82px 0; scroll-margin-top: 72px; }
     .section-head { display: flex; align-items: end; justify-content: space-between; gap: 34px; margin-bottom: 34px; }
@@ -113,7 +126,7 @@
 
     @media (max-width: 900px) {
       .navlinks a:not(.nav-home) { display: none; }
-      .hero-grid, .sports-card, .fundraiser-card { grid-template-columns: 1fr; }
+      .hero-grid, .sports-card, .fundraiser-card, .press-card { grid-template-columns: 1fr; }
       .hero-summary { grid-template-columns: 1fr 1fr; }
       .fundraiser-visual { min-height: 520px; }
       .participation { grid-template-columns: 1fr; }
@@ -128,7 +141,9 @@
       .hero-summary, .sports-gallery, .offer-grid, .closing-grid { grid-template-columns: 1fr; }
       .sports-gallery { min-height: 0; grid-template-rows: 430px 230px 230px; }
       .sports-gallery img:first-child { grid-row: auto; }
-      .sports-copy, .fundraiser-copy { padding: 27px 22px; }
+      .sports-copy, .fundraiser-copy, .press-copy { padding: 27px 22px; }
+      .press-visual { min-height: 0; height: 520px; padding: 14px; }
+      .press-actions .btn { width: 100%; }
       .fundraiser-visual { min-height: 420px; padding: 14px; }
       .fundraiser-actions .btn, .closing .btn { width: 100%; }
       .section-head { display: block; }
@@ -143,6 +158,7 @@
       <a class="brand" href="index.html">IGNACIO <span>TKD PERÚ</span></a>
       <div class="navlinks">
         <a class="nav-home" href="index.html">Inicio</a>
+        <a href="#medios">En los medios</a>
         <a href="#deportivas">Noticias deportivas</a>
         <a href="#fondos">Actividades pro fondos</a>
         <a href="index.html#alianzas">Patrocinio</a>
@@ -155,15 +171,17 @@
     <div class="wrap hero-grid">
       <div>
         <div class="eyebrow">Sección independiente</div>
-        <h1>Noticias y actividades</h1>
-        <p>Resultados deportivos, novedades y actividades pro fondos que acompañan la preparación de Ignacio rumbo a los II World Games Taekwon-Do ITF 2026.</p>
+        <h1>Noticias y medios</h1>
+        <p>Resultados deportivos, apariciones en medios y actividades pro fondos que acompañan la preparación de Ignacio rumbo a los II World Games Taekwon-Do ITF 2026.</p>
         <div class="hero-actions">
-          <a class="btn red" href="#fondos">Ver actividades pro fondos</a>
+          <a class="btn red" href="#medios">Ver prensa y entrevistas</a>
+          <a class="btn light" href="#fondos">Ver actividades pro fondos</a>
           <a class="btn light" href="index.html">Volver a la página principal</a>
           <a class="btn light" href="https://www.instagram.com/ignaciotkdperu/" target="_blank" rel="noopener">Instagram · @ignaciotkdperu</a>
         </div>
       </div>
       <div class="hero-summary">
+        <div class="summary-card"><div class="eyebrow">En los medios</div><b>El Diez: “Va a Uruguay por el oro”</b><span>Primera nota de prensa sobre su camino internacional.</span></div>
         <div class="summary-card"><div class="eyebrow">Último resultado</div><b>3 medallas en Oxapampa</b><span>Dos primeros puestos y un segundo puesto.</span></div>
         <div class="summary-card"><div class="eyebrow">Actividad vigente</div><b>Pollada pro fondos · S/25</b><span>Viernes 28 de agosto. También coordinamos pedidos grupales.</span></div>
       </div>
@@ -171,6 +189,32 @@
   </header>
 
   <main>
+    <section class="media-section" id="medios">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="eyebrow">Ignacio en los medios</div><h2>Prensa y entrevistas</h2></div>
+          <p>Aquí reunimos las notas, entrevistas y espacios informativos que comparten la historia, trayectoria deportiva y preparación internacional de Ignacio.</p>
+        </div>
+        <article class="press-card">
+          <a class="press-visual" href="assets/prensa-el-diez-26-agosto-2026.jpg" target="_blank" rel="noopener" aria-label="Abrir la publicación de El Diez en tamaño completo">
+            <img src="assets/prensa-el-diez-26-agosto-2026.jpg" alt="Página del diario El Diez con la nota Va a Uruguay por el oro sobre Ignacio Espinoza">
+          </a>
+          <div class="press-copy">
+            <div class="meta"><span class="tag">Prensa escrita</span><span class="date">26 de agosto de 2026</span></div>
+            <p class="press-source">Diario El Diez · Polideportivo · Página 12</p>
+            <h3>“Va a Uruguay por el oro”</h3>
+            <p>El diario deportivo El Diez presentó la historia de Ignacio y resaltó que, con ocho años y 18 medallas, se prepara para competir por primera vez en el extranjero.</p>
+            <p>La publicación informa sobre su participación en los II World Games Taekwon-Do ITF, que se realizarán del 26 al 29 de noviembre en Uruguay.</p>
+            <div class="press-detail"><strong>Registro de la publicación:</strong> edición impresa del miércoles 26 de agosto de 2026. La imagen se presenta como evidencia de la cobertura periodística.</div>
+            <div class="press-actions">
+              <a class="btn red" href="assets/prensa-el-diez-26-agosto-2026.jpg" target="_blank" rel="noopener">Ver publicación ampliada</a>
+              <a class="btn light" href="index.html#participar">Conocer el proyecto</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <section id="deportivas">
       <div class="wrap">
         <div class="section-head">
