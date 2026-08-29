@@ -219,6 +219,25 @@
     .fact b { display: block; color: var(--navy); font-size: 1.1rem; }
     .fact span { color: var(--muted); font-size: .88rem; }
     .invitation-note { margin-top: 18px; padding: 19px; background: #fff; border-left: 5px solid var(--olive); border-radius: 12px; color: var(--muted); }
+    .event-explainer { display: grid; grid-template-columns: 1.15fr .85fr; gap: 16px; margin-top: 24px; }
+    .event-card { padding: 24px; background: #fff; border: 1px solid var(--line); border-radius: 18px; }
+    .event-card h3 { margin: 7px 0 10px; color: var(--navy); font-size: 1.45rem; line-height: 1.15; }
+    .event-card p { margin: 0; color: var(--muted); font-size: .94rem; }
+    .event-card p + p { margin-top: 12px; }
+    .event-card.official { color: #fff; background: var(--navy); border-color: var(--navy); }
+    .event-card.official h3 { color: #fff; }
+    .event-card.official p { color: #d4dbea; }
+    .event-card.official .eyebrow { color: #ff8993; }
+    .event-program { display: grid; grid-template-columns: repeat(4, 1fr); gap: 13px; margin-top: 16px; }
+    .program-day { padding: 19px; background: #fff; border: 1px solid var(--line); border-top: 5px solid var(--olive); border-radius: 15px; }
+    .program-day time { color: var(--red-dark); font-size: .78rem; font-weight: 950; letter-spacing: .08em; text-transform: uppercase; }
+    .program-day h3 { margin: 7px 0; color: var(--navy); font-size: 1.05rem; }
+    .program-day p { margin: 0; color: var(--muted); font-size: .84rem; }
+    .event-package { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
+    .package-list { margin: 14px 0 0; padding-left: 20px; color: var(--muted); font-size: .9rem; }
+    .package-list li + li { margin-top: 7px; }
+    .official-warning { margin-top: 15px; padding: 13px 14px; color: #5b4613; background: #fff5cf; border-radius: 11px; font-size: .84rem; }
+    .event-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
 
     .alliance-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
     .alliance-card { display: flex; flex-direction: column; padding: 23px; border: 1px solid var(--line); border-radius: 18px; background: #fff; }
@@ -359,7 +378,8 @@
       .event-fact:nth-child(3) { border-left: 0; border-top: 1px solid var(--line); }
       .event-fact:nth-child(4) { border-top: 1px solid var(--line); }
       .result-grid { grid-template-columns: 1fr; }
-      .alliance-grid, .sponsor-grid, .needs, .benefit-grid, .timeline { grid-template-columns: repeat(2, 1fr); }
+      .alliance-grid, .sponsor-grid, .needs, .benefit-grid, .timeline, .event-program { grid-template-columns: repeat(2, 1fr); }
+      .event-explainer { grid-template-columns: 1fr; }
       .document-grid { grid-template-columns: 1fr 1fr; }
       .logo-groups { grid-template-columns: 1fr; }
       .gallery { grid-template-columns: repeat(2, 1fr); }
@@ -373,7 +393,7 @@
       .hero h1 { font-size: 3.25rem; }
       .hero-photo img { height: 460px; }
       .hero-badge { right: 12px; left: 12px; bottom: 14px; }
-      .hero-stats, .event-strip .wrap, .story-photos, .values, .result-side, .medal-card, .facts, .alliance-grid, .sponsor-grid, .needs, .benefit-grid, .timeline, .document-grid, .form-row, .quick-links, .gallery { grid-template-columns: 1fr; }
+      .hero-stats, .event-strip .wrap, .story-photos, .values, .result-side, .medal-card, .facts, .alliance-grid, .sponsor-grid, .needs, .benefit-grid, .timeline, .document-grid, .form-row, .quick-links, .gallery, .event-program, .event-package { grid-template-columns: 1fr; }
       .event-fact { border-left: 0; border-top: 1px solid var(--line); }
       .event-fact:first-child { border-top: 0; }
       .story-photos img { height: 330px; }
@@ -442,9 +462,9 @@
   <section class="event-strip" aria-label="Datos del evento">
     <div class="wrap">
       <div class="event-fact"><b>26 al 29 de noviembre</b><span>Fechas de competencia</span></div>
-      <div class="event-fact"><b>Punta del Este, Uruguay</b><span>Sede internacional</span></div>
-      <div class="event-fact"><b>Taekwon-Do ITF</b><span>Tul, combate y rotura especial</span></div>
-      <div class="event-fact"><b>Chon-Ji Dojang</b><span>Escuela de formación</span></div>
+      <div class="event-fact"><b>Campus de Maldonado</b><span>Punta del Este, Uruguay</span></div>
+      <div class="event-fact"><b>Categorías Gups y Danes</b><span>Desde Pre-Mini hasta Veteranos</span></div>
+      <div class="event-fact"><b>Chon-Ji Dojang</b><span>Escuela de formación de Ignacio</span></div>
     </div>
   </section>
 
@@ -552,19 +572,68 @@
     <section class="world" id="world-games">
       <div class="wrap">
         <div class="section-head">
-          <div><div class="eyebrow">II World Games 2026</div><h2>De Perú a Punta del Este</h2></div>
-          <p>La participación requiere preparación deportiva, equipamiento, inscripción, pasajes, estadía, alimentación, seguro y traslados.</p>
+          <div><div class="eyebrow">II World Games 2026</div><h2>El reto internacional de Ignacio</h2></div>
+          <p>El programa oficial presenta un encuentro internacional de Taekwon-Do ITF con acreditaciones, pesaje y jornadas de competencia para distintas edades, grados y modalidades.</p>
         </div>
         <div class="world-grid">
           <div class="world-map"><img src="assets/img-04-ffeb6b4205.png" alt="Mapa de la ruta desde Perú hasta Punta del Este, Uruguay" loading="lazy"></div>
           <div>
             <div class="facts">
-              <div class="fact"><b>26-29 nov. 2026</b><span>Competencia</span></div>
-              <div class="fact"><b>Punta del Este</b><span>Uruguay</span></div>
-              <div class="fact"><b>II World Games</b><span>Evento internacional ITF</span></div>
+              <div class="fact"><b>26-29 nov. 2026</b><span>Fechas del evento</span></div>
+              <div class="fact"><b>Campus de Maldonado</b><span>Punta del Este, Uruguay</span></div>
+              <div class="fact"><b>Gups y Danes</b><span>Competencias por edad y grado</span></div>
               <div class="fact"><b>Primera experiencia</b><span>Participación fuera del Perú</span></div>
             </div>
+            <div class="invitation-note"><strong>Participación de Ignacio.</strong> Compite como deportista peruano de Taekwon-Do ITF, formado en Chon-Ji Dojang, e integra la delegación peruana que viajará al evento. Esta participación pertenece al circuito ITF y no corresponde a una convocatoria de la selección nacional federada del sistema World Taekwondo.</div>
           </div>
+        </div>
+
+        <div class="event-explainer">
+          <article class="event-card">
+            <div class="eyebrow">¿En qué consiste el evento?</div>
+            <h3>Cuatro días de actividad y tres jornadas de competencia</h3>
+            <p>Los II World Games reúnen a competidores y delegaciones de Taekwon-Do ITF en categorías Gups y Danes, desde Pre-Mini hasta Veteranos, además de pruebas individuales, por equipos y Taekwon-Do Adaptado.</p>
+            <p>El programa combina acreditación, pesaje, reuniones técnicas, ceremonia de apertura, competencias, finales y ceremonia de clausura.</p>
+          </article>
+          <article class="event-card official">
+            <div class="eyebrow">Ignacio en el programa</div>
+            <h3>Bloque de categorías Gups para menores</h3>
+            <p>Por su edad y grado, Ignacio se ubica dentro del bloque Gups que reúne a competidores Pre-Mini, Mini, Infantiles, Menores y Pre Juveniles. El programa general prevé esta jornada para el viernes 27 de noviembre desde las 8:30.</p>
+            <p>La categoría y el horario definitivo se confirman mediante la inscripción y acreditación oficiales.</p>
+          </article>
+        </div>
+
+        <div class="event-program" aria-label="Programa general de los II World Games 2026">
+          <article class="program-day"><time datetime="2026-11-25">Miércoles 25</time><h3>Llegada de delegaciones</h3><p>Recepción oficial en los hoteles asignados.</p></article>
+          <article class="program-day"><time datetime="2026-11-26">Jueves 26</time><h3>Acreditación y pesaje</h3><p>Administración, pesaje oficial y reuniones de árbitros y coaches.</p></article>
+          <article class="program-day"><time datetime="2026-11-27">Viernes 27</time><h3>Competencia Gups</h3><p>Jornada de Pre-Mini, Mini, Infantiles, Menores, Pre Juveniles y otras categorías Gups.</p></article>
+          <article class="program-day"><time datetime="2026-11-28">28 y 29 de noviembre</time><h3>Danes y finales</h3><p>Competencias individuales y por equipos, Taekwon-Do Adaptado, finales y clausura.</p></article>
+        </div>
+
+        <div class="event-package">
+          <article class="event-card">
+            <div class="eyebrow">Paquete oficial</div>
+            <h3>USD 650 · Hotel 3 estrellas</h3>
+            <ul class="package-list">
+              <li>Cinco noches de hotel: ingreso el 25 y salida el 30 de noviembre.</li>
+              <li>Inscripción y entrada al evento.</li>
+              <li>Traslados hotel–competencia–hotel.</li>
+            </ul>
+            <div class="official-warning"><strong>No incluye</strong> el traslado desde el aeropuerto o terminal hasta el hotel.</div>
+          </article>
+          <article class="event-card">
+            <div class="eyebrow">Fechas oficiales</div>
+            <h3>Cierres de inscripción</h3>
+            <ul class="package-list">
+              <li>Primer cierre: 9 de octubre de 2026, 13:00 h.</li>
+              <li>Cierre final: 6 de noviembre de 2026, 13:00 h.</li>
+              <li>Los paquetes del segundo cierre tienen un recargo del 20 %.</li>
+            </ul>
+            <div class="event-actions">
+              <a class="btn red" href="https://img.ibishi.co.uk/bank/26A20D8B-484E-4C33-864A-AC8695A5517E/2-world-games-2026-2-juegos-mundiales-2026-castellano.pdf" target="_blank" rel="noopener">Ver programa oficial (PDF)</a>
+              <a class="btn light" href="#participar">Apoyar la participación</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
