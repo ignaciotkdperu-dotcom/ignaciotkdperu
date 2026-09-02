@@ -25,7 +25,7 @@
     "@type": "ProfilePage",
     "name": "Ignacio TKD Perú",
     "url": "https://ignaciotkdperu-dotcom.github.io/ignaciotkdperu/",
-    "dateModified": "2026-08-30T07:52:06-05:00",
+    "dateModified": "2026-09-02T07:26:05-05:00",
     "mainEntity": {
       "@type": "Person",
       "name": "Ignacio Darío Espinoza Albarrán",
@@ -328,9 +328,11 @@
     .logo-group { padding: 22px; background: var(--soft); border: 1px solid var(--line); border-radius: 18px; }
     .logo-slot { min-height: 125px; display: grid; place-items: center; padding: 18px; text-align: center; color: #8d96a2; border: 2px dashed #cfd5dd; border-radius: 14px; font-weight: 800; }
     .logo-slot.occupied { display: block; padding: 0; color: var(--ink); background: #fff; border: 0; }
+    .ally-list { display: grid; gap: 14px; }
     .ally-link { min-height: 185px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 9px; padding: 20px; background: #fff; border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 10px 24px rgba(17,24,42,.06); transition: transform .2s ease, box-shadow .2s ease; }
     .ally-link:hover { transform: translateY(-2px); box-shadow: 0 15px 30px rgba(17,24,42,.11); }
     .ally-link img { width: min(215px, 90%); max-height: 74px; object-fit: contain; }
+    .ally-link.logo-round img { width: 104px; height: 104px; max-height: none; border-radius: 50%; }
     .ally-badge { display: inline-flex; padding: 5px 9px; color: var(--red-dark); background: #fff0f1; border-radius: 999px; font-size: .69rem; font-weight: 950; letter-spacing: .08em; text-transform: uppercase; }
     .ally-link strong { color: var(--navy); font-size: 1rem; }
     .ally-link p { margin: 0; color: var(--muted); font-size: .79rem; font-weight: 650; line-height: 1.4; }
@@ -811,13 +813,23 @@
           <div class="logo-group"><h3>Patrocinadores</h3><div class="logo-slot">Tu empresa puede estar aquí.</div></div>
           <div class="logo-group">
             <h3>Aliados deportivos</h3>
-            <div class="logo-slot occupied">
-              <a class="ally-link" href="https://aciatecperu.com/" target="_blank" rel="noopener" aria-label="Visitar el sitio web de Aciatec Perú">
-                <img src="assets/aciatec-peru-logo.png" alt="Logotipo de Aciatec Perú S.A.C." loading="lazy">
-                <span class="ally-badge">Aliado deportivo</span>
-                <strong>Aciatec Perú S.A.C.</strong>
-                <p>Gracias por sumarse al camino de Ignacio rumbo a Uruguay 2026.</p>
-              </a>
+            <div class="ally-list">
+              <div class="logo-slot occupied">
+                <a class="ally-link" href="https://aciatecperu.com/" target="_blank" rel="sponsored noopener" aria-label="Visitar el sitio web de Aciatec Perú">
+                  <img src="assets/aciatec-peru-logo.png" alt="Logotipo de Aciatec Perú S.A.C." loading="lazy">
+                  <span class="ally-badge">Aliado deportivo</span>
+                  <strong>Aciatec Perú S.A.C.</strong>
+                  <p>Gracias por sumarse al camino de Ignacio rumbo a Uruguay 2026.</p>
+                </a>
+              </div>
+              <div class="logo-slot occupied">
+                <a class="ally-link logo-round" href="https://www.tiktok.com/@importmaranatha" target="_blank" rel="sponsored noopener" aria-label="Visitar la cuenta de TikTok de Importaciones Maranatha">
+                  <img src="assets/importaciones-maranatha-logo.png" alt="Logotipo de Importaciones Maranatha" loading="lazy">
+                  <span class="ally-badge">Aliado deportivo</span>
+                  <strong>Importaciones Maranatha</strong>
+                  <p>Gracias por sumarse al camino de Ignacio rumbo a Uruguay 2026.</p>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -874,8 +886,8 @@
             </div>
 
             <div class="progress-wrap">
-              <div class="progress-head"><span>Avance del proyecto</span><span id="progressLabel">11% del camino recorrido</span></div>
-              <progress class="progress" id="progressBar" aria-label="Avance del proyecto" max="100" value="11">11%</progress>
+              <div class="progress-head"><span>Avance del proyecto</span><span id="progressLabel">15% del camino recorrido</span></div>
+              <progress class="progress" id="progressBar" aria-label="Avance del proyecto" max="100" value="15">15%</progress>
             </div>
           </div>
 
