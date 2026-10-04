@@ -87,6 +87,14 @@
       }
     ]
   }
+    const progressBar = document.getElementById("progressBar");
+    const progressLabel = document.getElementById("progressLabel");
+    if (progressBar && progressLabel) {
+      const safeProgress = Math.min(100, Math.max(0, projectProgress));
+      progressBar.value = safeProgress;
+      progressBar.textContent = safeProgress + "%";
+      progressLabel.textContent = safeProgress + "% del camino recorrido";
+    }
   </script>
   <style>
     :root {
@@ -531,7 +539,7 @@
       <div class="hero-copy">
         <div class="eyebrow">Recta final rumbo a Uruguay · Tu apoyo puede completar el camino</div>
         <h1>Ignacio Espinoza<small>Taekwondista peruano rumbo a los II World Games Taekwon-Do ITF 2026</small></h1>
-        <p><strong>Ignacio ya tiene sus pasajes y parte de su equipamiento está cubierto, pero todavía necesitamos completar USD 2,019.18.</strong> Esta meta permitirá cubrir su participación, acompañante, estadía adicional, alimentación, traslados, seguro y los implementos que aún faltan. Cada aporte nos acerca a que llegue a Uruguay con lo necesario para concentrarse en competir y representar al Perú.</p>
+        <p><strong>Ignacio ya tiene sus pasajes y parte de su equipamiento está cubierto. Estamos en la recta final y todavía necesitamos tu apoyo.</strong> Cada aporte nos ayuda a completar su participación, estadía y bolsa de viaje para que llegue a Uruguay con lo necesario y pueda concentrarse en competir y representar al Perú.</p>
         <div class="hero-actions">
           <a class="btn red" href="#participar">Quiero apoyar ahora</a>
           <a class="btn ghost" href="#noticias">Ver entrevistas y cobertura</a>
@@ -838,7 +846,7 @@
           <article class="need"><h3>Protectores de competencia</h3><p>Implementos aún pendientes.</p><strong>USD 191.18 pendientes</strong><button class="btn light" type="button" onclick="chooseSupport('Protectores de competencia')">Quiero apoyar</button></article>
           <article class="need"><h3>Entrada del acompañante</h3><p>Acceso adicional presupuestado.</p><strong>USD 30 pendientes</strong><button class="btn light" type="button" onclick="chooseSupport('Entrada del acompañante')">Quiero apoyar</button></article>
         </div>
-        <div class="official-warning"><strong>Meta pendiente real:</strong> USD 2,019.18. Los pasajes ya comprados y los artículos donados no se contabilizan dentro de esta meta.</div>
+        <div class="official-warning"><strong>Recta final de la campaña:</strong> los pasajes ya comprados y los artículos donados están cubiertos. Los aportes de esta etapa se destinan únicamente a las necesidades que todavía están pendientes.</div>
       </div>
     </section>
 
@@ -971,8 +979,9 @@
             </div>
 
             <div class="progress-wrap">
-              <div class="progress-head"><span>Meta pendiente real</span><span>USD 2,019.18 por financiar</span></div>
-              <div class="route-note"><strong>Avance:</strong> los pasajes ya están comprados y el dobok y protector bucal ya fueron donados. La campaña se concentra ahora en participación, acompañante, estadía adicional y bolsa de viaje.</div>
+              <div class="progress-head"><span>Avance de la recaudación</span><span id="progressLabel">Seguimos avanzando</span></div>
+              <progress class="progress" id="progressBar" aria-label="Avance de la recaudación" max="100" value="55">55%</progress>
+              <div class="route-note"><strong>Recta final:</strong> los pasajes ya están comprados y el dobok y protector bucal ya fueron donados. La campaña continúa para completar participación, acompañante, estadía adicional y bolsa de viaje.</div>
             </div>
           </div>
 
@@ -1072,7 +1081,7 @@
 
   <script>
     const whatsappNumber = "51987760581";
-    const projectProgress = 0;
+    const projectProgress = 55;
 
     function toggleMenu(button) {
       const menu = document.getElementById("navlinks");
